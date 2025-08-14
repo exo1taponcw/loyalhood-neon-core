@@ -9,16 +9,16 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Dark futuristic background */
-    --background: 240 10% 8%;
-    --foreground: 0 0% 97%;
+    --background: 240 15% 4%;
+    --foreground: 0 0% 95%;
 
     /* Card variants */
-    --card: 240 10% 12%;
-    --card-foreground: 0 0% 97%;
+    --card: 240 12% 6%;
+    --card-foreground: 0 0% 95%;
 
     /* Popover */
-    --popover: 240 10% 12%;
-    --popover-foreground: 0 0% 97%;
+    --popover: 240 12% 6%;
+    --popover-foreground: 0 0% 95%;
 
     /* Primary purple from gradient */
     --primary: 287 69% 54%;
@@ -29,20 +29,20 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 97%;
 
     /* Muted variants */
-    --muted: 240 10% 15%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 240 12% 8%;
+    --muted-foreground: 0 0% 60%;
 
     /* Accent purple */
-    --accent: 287 50% 45%;
-    --accent-foreground: 0 0% 97%;
+    --accent: 287 50% 35%;
+    --accent-foreground: 0 0% 95%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 97%;
+    --destructive-foreground: 0 0% 95%;
 
     /* Borders and inputs */
-    --border: 240 10% 20%;
-    --input: 240 10% 15%;
+    --border: 240 12% 12%;
+    --input: 240 12% 8%;
     --ring: 287 69% 54%;
 
     --radius: 0.75rem;
@@ -59,13 +59,13 @@ All colors MUST be HSL.
     --neon-glow: 287 100% 80%;
 
     /* Sidebar */
-    --sidebar-background: 240 10% 10%;
+    --sidebar-background: 240 15% 3%;
     --sidebar-foreground: 0 0% 90%;
     --sidebar-primary: 287 69% 54%;
-    --sidebar-primary-foreground: 0 0% 97%;
-    --sidebar-accent: 240 10% 15%;
+    --sidebar-primary-foreground: 0 0% 95%;
+    --sidebar-accent: 240 12% 8%;
     --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 240 10% 20%;
+    --sidebar-border: 240 12% 12%;
     --sidebar-ring: 287 69% 54%;
   }
 

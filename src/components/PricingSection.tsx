@@ -62,64 +62,65 @@ const PricingSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-6">
           {plans.map((plan, index) => (
             <div 
               key={plan.name}
-              className={`bg-card/90 backdrop-blur-sm p-6 rounded-xl neon-border hover-glow relative animate-fade-in-up ${
+              className={`bg-card/90 backdrop-blur-sm p-4 lg:p-6 rounded-xl neon-border hover-glow relative animate-fade-in-up ${
                 plan.popular ? 'ring-2 ring-secondary neon-glow-red' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-primary to-secondary px-4 py-1 rounded-full text-sm font-bold font-orbitron text-foreground">
+                  <span className="bg-gradient-to-r from-primary to-secondary px-3 py-1 rounded-full text-xs font-bold font-orbitron text-foreground">
                     Most Popular
                   </span>
                 </div>
               )}
               
               <div className="text-center">
-                <h3 className="text-xl font-bold font-orbitron mb-4 gradient-text">
+                <h3 className="text-lg lg:text-xl font-bold font-orbitron mb-3 lg:mb-4 gradient-text">
                   {plan.name}
                 </h3>
                 
-                <div className="space-y-3 mb-6 text-left">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground font-exo">
-                      <strong>Disk space:</strong> {plan.diskSpace}
+                <div className="space-y-2 lg:space-y-3 mb-4 lg:mb-6 text-left">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground font-exo text-sm lg:text-base">
+                      <strong className="text-primary">Disk:</strong> {plan.diskSpace}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground font-exo">
-                      <strong>RAM:</strong> {plan.ram}
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground font-exo text-sm lg:text-base">
+                      <strong className="text-primary">RAM:</strong> {plan.ram}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground font-exo">
-                      <strong>CPU:</strong> {plan.cpu}
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground font-exo text-sm lg:text-base">
+                      <strong className="text-primary">CPU:</strong> {plan.cpu}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground font-exo">
-                      <strong>Control panel:</strong> {plan.controlPanel}
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 lg:w-5 lg:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground font-exo text-sm lg:text-base">
+                      <strong className="text-primary">Panel:</strong> {plan.controlPanel}
                     </span>
                   </div>
                 </div>
                 
-                <div className="mb-6">
-                  <span className="text-3xl font-bold font-orbitron gradient-text">
+                <div className="mb-4 lg:mb-6">
+                  <span className="text-2xl lg:text-3xl font-bold font-orbitron gradient-text">
                     {plan.price}
                   </span>
                 </div>
                 
                 <Button 
                   variant="plan" 
-                  className="w-full"
+                  size="sm"
+                  className="w-full text-xs lg:text-sm"
                   asChild
                 >
                   <a href="https://loyalhood.xyz/discord" target="_blank" rel="noopener noreferrer">
