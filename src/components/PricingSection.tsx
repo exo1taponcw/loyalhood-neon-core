@@ -67,7 +67,7 @@ const PricingSection = () => {
             <div 
               key={plan.name}
               className={`bg-card/90 backdrop-blur-sm p-4 lg:p-6 rounded-xl neon-border hover-glow relative animate-fade-in-up ${
-                plan.popular ? 'ring-2 ring-secondary neon-glow-red' : ''
+                plan.popular ? 'ring-2 ring-secondary neon-glow-purple' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >

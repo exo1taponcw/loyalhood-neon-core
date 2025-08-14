@@ -2,38 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LoyalHOOD Futuristic Design System - Purple to Red Gradient Theme
+/* LoyalHOOD Futuristic Design System - Blue with Purple Accents Theme
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
     /* Dark futuristic background */
-    --background: 240 15% 4%;
+    --background: 220 25% 2%;
     --foreground: 0 0% 95%;
 
     /* Card variants */
-    --card: 240 12% 6%;
+    --card: 220 20% 4%;
     --card-foreground: 0 0% 95%;
 
     /* Popover */
-    --popover: 240 12% 6%;
+    --popover: 220 20% 4%;
     --popover-foreground: 0 0% 95%;
 
-    /* Primary purple from gradient */
-    --primary: 287 69% 54%;
+    /* Primary blue */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 97%;
 
-    /* Secondary red from gradient */
-    --secondary: 4 72% 57%;
+    /* Secondary purple accent */
+    --secondary: 260 60% 65%;
     --secondary-foreground: 0 0% 97%;
 
     /* Muted variants */
-    --muted: 240 12% 8%;
+    --muted: 220 15% 6%;
     --muted-foreground: 0 0% 60%;
 
-    /* Accent purple */
-    --accent: 287 50% 35%;
+    /* Accent blue */
+    --accent: 217 70% 45%;
     --accent-foreground: 0 0% 95%;
 
     /* Destructive */
@@ -41,32 +41,32 @@ All colors MUST be HSL.
     --destructive-foreground: 0 0% 95%;
 
     /* Borders and inputs */
-    --border: 240 12% 12%;
-    --input: 240 12% 8%;
-    --ring: 287 69% 54%;
+    --border: 220 15% 10%;
+    --input: 220 15% 6%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
     /* Custom gradient colors */
-    --gradient-primary-start: 287 69% 54%;  /* #9b59b6 */
-    --gradient-primary-end: 4 72% 57%;      /* #e74c3c */
-    --gradient-secondary-start: 287 50% 45%; /* #8e44ad */
-    --gradient-secondary-end: 355 78% 47%;   /* #c0392b */
+    --gradient-primary-start: 217 91% 60%;  /* Blue */
+    --gradient-primary-end: 260 60% 65%;    /* Purple */
+    --gradient-secondary-start: 217 70% 45%; /* Darker Blue */
+    --gradient-secondary-end: 220 25% 8%;    /* Near Black */
 
     /* Neon glow colors */
-    --neon-purple: 287 69% 54%;
-    --neon-red: 4 72% 57%;
-    --neon-glow: 287 100% 80%;
+    --neon-blue: 217 91% 60%;
+    --neon-purple: 260 60% 65%;
+    --neon-glow: 217 100% 80%;
 
     /* Sidebar */
-    --sidebar-background: 240 15% 3%;
+    --sidebar-background: 220 25% 1%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 287 69% 54%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 95%;
-    --sidebar-accent: 240 12% 8%;
+    --sidebar-accent: 220 15% 6%;
     --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 240 12% 12%;
-    --sidebar-ring: 287 69% 54%;
+    --sidebar-border: 220 15% 10%;
+    --sidebar-ring: 217 91% 60%;
   }
 
 }
@@ -80,10 +80,10 @@ All colors MUST be HSL.
 
 @keyframes neonPulse {
   0%, 100% { 
-    filter: drop-shadow(0 0 5px hsl(var(--neon-purple) / 0.8));
+    filter: drop-shadow(0 0 5px hsl(var(--neon-blue) / 0.8));
   }
   50% { 
-    filter: drop-shadow(0 0 20px hsl(var(--neon-red) / 0.8));
+    filter: drop-shadow(0 0 20px hsl(var(--neon-purple) / 0.8));
   }
 }
 
@@ -142,11 +142,11 @@ All colors MUST be HSL.
   }
 
   .neon-glow {
-    box-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5), 0 0 20px hsl(var(--neon-purple) / 0.3), 0 0 30px hsl(var(--neon-purple) / 0.1);
+    box-shadow: 0 0 10px hsl(var(--neon-blue) / 0.5), 0 0 20px hsl(var(--neon-blue) / 0.3), 0 0 30px hsl(var(--neon-blue) / 0.1);
   }
 
-  .neon-glow-red {
-    box-shadow: 0 0 10px hsl(var(--neon-red) / 0.5), 0 0 20px hsl(var(--neon-red) / 0.3), 0 0 30px hsl(var(--neon-red) / 0.1);
+  .neon-glow-purple {
+    box-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5), 0 0 20px hsl(var(--neon-purple) / 0.3), 0 0 30px hsl(var(--neon-purple) / 0.1);
   }
 
   .neon-border {
@@ -160,17 +160,17 @@ All colors MUST be HSL.
 
   .hover-glow:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px hsl(var(--neon-red) / 0.6);
+    box-shadow: 0 10px 25px hsl(var(--neon-purple) / 0.6);
   }
 
   .social-icon {
     transition: all 0.3s ease;
-    filter: drop-shadow(0 0 5px hsl(var(--neon-purple) / 0.6));
+    filter: drop-shadow(0 0 5px hsl(var(--neon-blue) / 0.6));
   }
 
   .social-icon:hover {
     transform: scale(1.2);
-    filter: drop-shadow(0 0 15px hsl(var(--neon-red) / 0.8));
+    filter: drop-shadow(0 0 15px hsl(var(--neon-purple) / 0.8));
   }
 }
 
